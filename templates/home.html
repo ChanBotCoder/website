@@ -55,6 +55,22 @@ mid-exam grades, are  correlated. For the  following year, we  need to  make sur
 attend more lectures to raise their grades. Also, to have an impact on final grades, we need to put 
 more effort into mid-exam preparation. 
     </p>
+
+    <form method="post" enctype="multipart/form-data">
+    <div>
+    <label for="profile_pic">Choose file to upload</label>
+    <input
+      type="file"
+      id="profile_pic"
+      name="profile_pic"
+      accept=".jpg, .jpeg, .png" />
+    </div>
+    <div>
+    <button>Submit</button>
+    </div>
+    </form>
+
+      
      <h2 Class="text-center mt-2 mb-4">Features</h2>
     <p class="lead">show some features</p>
     <div>
@@ -63,9 +79,10 @@ more effort into mid-exam preparation.
       {% endfor %}
     </div>
     <div style="text-align:center;">
-    <button class="btn btn-primary btn-lg">Contact Us</button>
+    <a href="mailto:2k21aids10@kiot.ac.in?subject=Need to Contact Us" class="btn btn-primary btn-lg">Contact Us</a>
       <p class="mt-4">Copyright 2023, Variants</p>
     </div>
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>
